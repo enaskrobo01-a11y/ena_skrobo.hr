@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCP/IP protocol stack - školski rad</title>
+  <meta name="description" content="Školski rad o TCP/IP protocol stacku: slojevi, protokoli, tok podataka i izvori.">
+  <link rel="stylesheet" href="1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">TCP/IP // RAD</a>
+      <ul class="nav-links">
+        <li><a href="#sazetak">Sažetak</a></li>
+        <li><a href="#uvod">Uvod</a></li>
+        <li><a href="#razrada">Razrada</a></li>
+        <li><a href="#zakljucak">Zaključak</a></li>
+        <li><a href="#izvori">Izvori</a></li>
+        <li><a href="autor.html">Autor</a></li>
+      </ul>
+      <div class="theme-switcher">
+        <button id="darkModeToggle" class="btn-toggle" aria-haspopup="true" aria-expanded="false">Tema</button>
+        <div class="theme-menu" id="themeMenu" aria-label="Odabir teme">
+          <button id="themeLight" class="theme-option">Svjetlo</button>
+          <button id="themeDark" class="theme-option">Tama</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="hero reveal">
+      <p class="kicker">Školski projekt / 2026</p>
+      <h1>TCP/IP protocol stack: temelj suvremene internetske komunikacije</h1>
+      <p class="lead">Pregled slojeva, ključnih protokola i načina na koji podatak putuje od korisničke aplikacije do mrežne infrastrukture i natrag.</p>
+      <div class="hero-tags">
+        <span>IP adresiranje</span>
+        <span>TCP i UDP</span>
+        <span>Ruting</span>
+      </div>
+    </header>
+
+    <section id="sazetak" class="card reveal">
+      <h2>Kratki sažetak</h2>
+      <p>Rad obrađuje TCP/IP protocol stack kao osnovni model internetske komunikacije. Objašnjeni su slojevi modela, najvažniji protokoli i njihova uloga u prijenosu podataka. Cilj je pokazati kako uređaji pouzdano razmjenjuju informacije unatoč različitim mrežama i tehnologijama.</p>
+    </section>
+
+    <section id="uvod" class="card reveal">
+      <h2>Uvod</h2>
+      <p>TCP/IP protocol stack skup je pravila koji omogućuje uređajima da komuniciraju preko lokalnih i globalnih mreža. Nastao je kroz ARPANET projekt i tijekom desetljeća postao standard Interneta. Umjesto jednog velikog protokola, TCP/IP koristi slojeviti pristup: svaki sloj rješava određeni dio problema, od aplikacijskih zahtjeva do fizičkog slanja okvira kroz mrežni medij.</p>
+      <figure class="hero-image">
+        <img src="slika.jpg" alt="Vizual mrežne komunikacije i TCP/IP slojeva" loading="lazy">
+        <figcaption>Ilustracija iz lokalnog foldera projekta.</figcaption>
+      </figure>
+    </section>
+
+    <section id="razrada" class="card reveal">
+      <h2>Razrada teme</h2>
+
+      <h3>1. Slojevi TCP/IP modela</h3>
+      <p>TCP/IP model najčešće se prikazuje kroz četiri sloja: <strong>Application</strong>, <strong>Transport</strong>, <strong>Internet</strong> i <strong>Link/Network Access</strong>. Svaki sloj pruža usluge sloju iznad sebe i koristi usluge sloja ispod. Takva podjela omogućuje modularnost: promjene u jednom sloju ne zahtijevaju potpuni redizajn cijelog sustava.</p>
+
+      <h3>2. Transportni sloj: TCP i UDP</h3>
+      <p>Transportni sloj osigurava komunikaciju između procesa na krajnjim uređajima. <strong>TCP</strong> je pouzdan, orijentiran na vezu i koristi potvrde primitka, numeriranje segmenata te ponovno slanje izgubljenih paketa. <strong>UDP</strong> je brži i jednostavniji jer ne uspostavlja vezu ni mehanizme pouzdanosti, pa je prikladan za streaming, online igre i DNS upite gdje je kašnjenje kritično.</p>
+
+      <h3>3. Internet sloj: IP adresiranje i ruting</h3>
+      <p>Internet sloj koristi <strong>IP</strong> za logičko adresiranje i usmjeravanje paketa između mreža. Usmjerivači (routeri) čitaju odredišne IP adrese i biraju put prema tablicama rutiranja. U ovom sloju važni su i pomoćni protokoli poput <strong>ICMP</strong> za dijagnostiku (npr. ping) te <strong>ARP</strong> koji povezuje IP adrese s MAC adresama u lokalnoj mreži.</p>
+
+      <h3>4. Aplikacijski sloj i svakodnevna upotreba</h3>
+      <ul>
+        <li><strong>Web:</strong> HTTP i HTTPS omogućuju učitavanje stranica i API komunikaciju.</li>
+        <li><strong>E-pošta:</strong> SMTP, POP3 i IMAP upravljaju slanjem i preuzimanjem poruka.</li>
+        <li><strong>Razrješavanje domena:</strong> DNS prevodi nazive poput primjer.hr u IP adrese.</li>
+        <li><strong>Udaljeni pristup:</strong> SSH i VPN tehnologije koriste TCP/IP za sigurnu administraciju.</li>
+      </ul>
+      <p>Detaljnije tehničke informacije dostupne su u dokumentaciji organizacije <a href="https://www.ietf.org/" target="_blank" rel="noopener">IETF</a>, dok opći pregled možeš pronaći na <a href="https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/" target="_blank" rel="noopener">Cloudflare Learning Centru</a> i Wikipediji.</p>
+    </section>
+
+    <section id="zakljucak" class="card reveal">
+      <h2>Zaključak</h2>
+      <p>TCP/IP protocol stack predstavlja osnovu funkcioniranja Interneta i većine modernih mreža. Razumijevanje slojeva i protokola pomaže pri dijagnostici problema, sigurnijem dizajnu sustava i učinkovitijem razvoju aplikacija. Iako je model star više desetljeća, i dalje je ključan za nove tehnologije poput oblaka, IoT-a i distribuiranih servisa.</p>
+    </section>
+
+    <section id="izvori" class="card reveal">
+      <h2>Popis izvora</h2>
+      <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Internet_protocol_suite" target="_blank" rel="noopener">Wikipedia - Internet protocol suite</a></li>
+        <li><a href="https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/" target="_blank" rel="noopener">Cloudflare - What is TCP/IP?</a></li>
+        <li><a href="https://www.ibm.com/think/topics/tcp-ip" target="_blank" rel="noopener">IBM - TCP/IP model</a></li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc1122" target="_blank" rel="noopener">RFC 1122 - Internet Host Requirements</a></li>
+        <li><a href="https://www.ietf.org/" target="_blank" rel="noopener">IETF - Internet Engineering Task Force</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <button id="backToTop" class="btn-top" title="Povratak na vrh">↑</button>
+
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+    <div class="image-modal-backdrop" id="imageModalBackdrop"></div>
+    <div class="image-modal-content" role="dialog" aria-modal="true">
+      <button class="image-modal-close" id="imageModalClose" aria-label="Zatvori sliku">×</button>
+      <img src="slika.jpg" alt="Vizual mrežne komunikacije i TCP/IP slojeva" loading="lazy">
+      <p class="image-modal-caption">Kliknite izvan slike ili na X za povratak.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p><span id="year"></span>. Školski rad - TCP/IP protocol stack. Napravila <strong>Ena Škrobo</strong>.</p>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>

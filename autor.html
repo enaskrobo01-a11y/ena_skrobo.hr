@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autor - Ena Škrobo</title>
+  <link rel="stylesheet" href="1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="2.html" class="logo">AI // RAD</a>
+      <ul class="nav-links">
+        <li><a href="2.html#sazetak">Sažetak</a></li>
+        <li><a href="2.html#uvod">Uvod</a></li>
+        <li><a href="2.html#razrada">Razrada</a></li>
+        <li><a href="2.html#zakljucak">Zaključak</a></li>
+        <li><a href="2.html#izvori">Izvori</a></li>
+        <li><a href="autor.html" class="active">Autor</a></li>
+      </ul>
+      <div class="theme-switcher">
+        <button id="darkModeToggle" class="btn-toggle" aria-haspopup="true" aria-expanded="false">Tema</button>
+        <div class="theme-menu" id="themeMenu" aria-label="Odabir teme">
+          <button id="themeLight" class="theme-option">Svjetlo</button>
+          <button id="themeDark" class="theme-option">Tama</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card reveal">
+      <h2>Napravljeno od strane</h2>
+      <p>Ovu web stranicu i školski rad o umjetnoj inteligenciji napravila je <strong>Ena Škrobo</strong>.</p>
+      <p>Stranica koristi lokalne datoteke, moderni dizajn i interaktivne elemente za prikaz teme umjetne inteligencije u školi.</p>
+      <p>Za povratak na rad, klikni donji gumb ili navigaciju.</p>
+      <a class="theme-option" href="2.html">Povratak na početnu</a>
+    </section>
+  </main>
+
+  <button id="backToTop" class="btn-top" title="Povratak na vrh">↑</button>
+
+  <footer>
+    <p><span id="year"></span>. Napravljeno od strane Ena Škrobo.</p>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>

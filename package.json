@@ -1,0 +1,11 @@
+{
+  "name": "ena-projekt-stranica-server",
+  "version": "1.0.0",
+  "description": "Lokalni Node.js server za statički web projekt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

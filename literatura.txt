@@ -1,0 +1,9 @@
+Wikipedia: Internet protocol suite - https://en.wikipedia.org/wiki/Internet_protocol_suite
+
+Cloudflare Learning Center: What is TCP/IP? - https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/
+
+IBM Think: TCP/IP model - https://www.ibm.com/think/topics/tcp-ip
+
+RFC Editor: RFC 1122 (Requirements for Internet Hosts) - https://www.rfc-editor.org/rfc/rfc1122
+
+IETF: Internet Engineering Task Force - https://www.ietf.org/
